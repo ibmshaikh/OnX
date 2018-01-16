@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="40sp"
+        android:layout_height="match_parent">
+
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayou"
+        android:layout_marginTop="30sp"
+
+        android:layout_below="@+id/spinner"
+
+        >
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textInputLayou"
+        >
+        <EditText
+            android:id="@+id/rupee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Price"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_marginTop="30sp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textInputLayout2">
+
+        <EditText
+            android:id="@+id/des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description" />
+    </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputLayout2"
+            android:layout_marginTop="30sp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textInputLayout3">
+
+            <EditText
+                android:id="@+id/phno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </RelativeLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/botto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/nav_item"
+        app:itemTextColor="@drawable/nav_item"
+        app:menu="@menu/bottomnavi"
+        app:itemBackground="@color/colorPrimary" />
+
+
+
+</RelativeLayout>

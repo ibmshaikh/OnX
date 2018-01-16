@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+    <item
+        android:id="@+id/ph_no"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Discover"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/chat"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_name"
+        android:title="message"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/myads"
+        android:enabled="true"
+        android:icon="@drawable/ic_format_align_justify_black_24dp"
+        android:title="My ADs"
+        app:showAsAction="ifRoom"/>
+
+</menu>

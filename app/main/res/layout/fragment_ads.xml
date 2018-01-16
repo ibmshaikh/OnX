@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ibrahim.onx.fregments.Ads">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="35sp"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/Seller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button2"
+            android:background="@drawable/button"
+            android:onClick="sels"
+            android:text="Sellers"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/Buyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Seller"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="46dp"
+            android:background="@drawable/button2"
+            android:onClick="buys"
+            android:text="Buyers"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="cheacking"
+            android:text="Button" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
